@@ -13,6 +13,9 @@
 <body>
 
 <jsp:include page="include/included.jsp" />
+<p>
+    Mój przekazany parametr to: <%= request.getParameter("myParam") %>
+</p>
 
 <h1>
     Redirected page
