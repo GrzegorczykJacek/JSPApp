@@ -38,5 +38,7 @@
     Server name: ${pageContext.request.requestURI}
 </p>
 
+<jsp:forward page="redirected.jsp" />
+
 </body>
 </html>
