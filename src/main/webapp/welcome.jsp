@@ -26,5 +26,17 @@
     Licznik odwiedzin: <%= ++visitCounter %>
 </p>
 
+<p>
+    Server name: ${pageContext.request.serverName}
+</p>
+
+    <p>
+        Server name: ${pageContext.request.serverPort}
+    </p>
+
+<p>
+    Server name: ${pageContext.request.requestURI}
+</p>
+
 </body>
 </html>
