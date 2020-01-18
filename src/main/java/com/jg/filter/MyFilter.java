@@ -1,9 +1,13 @@
 package com.jg.filter;
 
 import javax.servlet.*;
+import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 import java.io.PrintWriter;
-
+@WebFilter(filterName = "MyFilter",
+            urlPatterns = {"/hello"})
+//@WebFilter(filterName = "MyFilter",
+//            servletNames = "HelloWorld")
 public class MyFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest,
