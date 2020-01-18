@@ -42,7 +42,7 @@
 <%--        <jsp:param name="myParam" value="my value - moja wartość"/>--%>
 <%--    </jsp:forward>--%>
 
-    <h2>Parametry wyszukiwania</h2>
+    <h2>Parametry wyszukiwania - GET</h2>
     <form action="search.jsp" method="get">
         <label>Szukane słowo: <input type="text" name="query"></label>
         <label>Strona numer: <input name="page" type="number"></label>
@@ -57,6 +57,18 @@
 
 <a href="search.jsp?query=JAVA&page=3&sort=desc">Wyszukaj JAVA</a>
 
+    <h2>Parametry wyszukiwania - POST</h2>
+    <form action="search.jsp" method="post">
+        <label>Szukane słowo: <input type="text" name="query"></label>
+        <label>Strona numer: <input name="page" type="number"></label>
+        <label>Sortowanie:
+            <select name="sort">
+                <option value="asc">rosnąco</option>
+                <option value="desc">malejąco</option>
+            </select>
+        </label>
+        <input type="submit" value="wyślij"/>
+    </form>
 
 </body>
 </html>
