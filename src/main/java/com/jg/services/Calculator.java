@@ -1,9 +1,13 @@
 package com.jg.services;
 
-public class Calculator {
+import lombok.Getter;
+import lombok.Setter;
 
-    public int square(int n){
+@Getter
+@Setter
+public class Calculator {
+    private int n;
+    public int square(){
         return n * n;
     }
-
 }

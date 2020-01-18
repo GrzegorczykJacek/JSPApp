@@ -3,4 +3,5 @@
 
 <p>
     (To jest test z załaczonego pliku): <%= LocalDateTime.now() %>
+    <button>Załączony przycisk</button>
 </p>
