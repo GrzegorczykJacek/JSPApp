@@ -9,13 +9,13 @@
 <!--        <welcome-file>welcome.jsp</welcome-file>-->
 <!--    </welcome-file-list>-->
     
-    
-    <servlet>
-        <servlet-name>HelloWorldServlet</servlet-name>
-        <servlet-class>com.jg.servlet.HelloWorldServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>HelloWorldServlet</servlet-name>
-        <url-pattern>/</url-pattern>
-    </servlet-mapping>
+<!--    Zakomentowano na potrzeby utworzenia konfiguracji adnotacjami zamiast w pliku web.xml-->
+<!--    <servlet>-->
+<!--        <servlet-name>HelloWorldServlet</servlet-name>-->
+<!--        <servlet-class>com.jg.servlet.HelloWorldServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>HelloWorldServlet</servlet-name>-->
+<!--        <url-pattern>/</url-pattern>-->
+<!--    </servlet-mapping>-->
 </web-app>
