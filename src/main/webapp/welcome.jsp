@@ -1,4 +1,5 @@
-<%@ page import="java.time.LocalDateTime" %><%--
+<%@ page import="java.time.LocalDateTime" %>
+<%@ page import="java.net.CookieHandler" %><%--
   Created by IntelliJ IDEA.
   User: joker
   Date: 12.01.2020
@@ -69,6 +70,18 @@
         </label>
         <input type="submit" value="wyślij"/>
     </form>
+
+<h2>Dodajemy obsługę cookie</h2>
+<%
+    int searchID = 12345;
+    Cookie cookie = new Cookie("searchID", String.valueOf(searchID));
+    cookie.setMaxAge(60 * 60 * 24);
+    response.addCookie(cookie);
+
+    Cookie usernameCookie = new Cookie("username", "MyUserName");
+    response.addCookie(usernameCookie);
+
+%>
 
 </body>
 </html>
