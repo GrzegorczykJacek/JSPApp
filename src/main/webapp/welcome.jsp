@@ -55,8 +55,7 @@
         </label>
         <input type="submit" value="wyślij"/>
     </form>
-
-<a href="search.jsp?query=JAVA&page=3&sort=desc">Wyszukaj JAVA</a>
+    <a href="search.jsp?query=JAVA&page=3&sort=desc">Wyszukaj JAVA</a>
 
     <h2>Parametry wyszukiwania - POST</h2>
     <form action="search.jsp" method="post">
@@ -82,6 +81,15 @@
     response.addCookie(usernameCookie);
 
 %>
+
+
+<h2>Obsługa sesji</h2>
+<%
+    request.getSession().invalidate();
+    HttpSession actualSession = request.getSession();
+    actualSession.setAttribute("userID", 12345);
+%>
+    <a href="session.jsp">Session</a>
 
 </body>
 </html>
